@@ -1,0 +1,52 @@
+---
+title: Map of predicted distributions, observations, and conservation gaps for taxon
+
+output:
+  html_document:
+      css: style.css
+---
+# **Map of predicted distributions, observations, and conservation gaps for taxon name**
+
+## Interactive map
+<iframe src="InteractiveMaps/Brassica_aucheri.html" width="100%" height="800"></iframe>
+
+## Information about map
+
+The taxon-specific interactive map illustrates:
+
+### **Predicted distributions**
+You may toggle between the following two distribution models by selecting the model of choice in the upper right corner of the map:
+
+- <span style="color: black;">**Original ecological niche model distribution**</span>: created using the occurrence records summarised above, plus WorldClim and SoilGrids environmental data. Habitat suitability according to this model is presented on a yellow (0.0) to red (1.0) colour scale.
+- <span style="color: black;">**Binary thresholded distribution model**</span>: used for conservation gap analysis and which was thresholded using the mean habitat suitability score for the taxon.
+
+### **Occurrence records**
+You may display or hide the following occurrence records located from the species' native country/countries by selecting or de-selecting each type in the upper right corner of the map:
+
+- <span style="color: black;">**H (Observation)**</span>: reference occurrence records (H) obtained from GBIF and iDigBio biodiversity databases. Click on the blue markers to reveal pop-ups displaying metadata associated with each record.
+- <span style="color: black;">**H (Historic accession)**</span>: reference occurrence records (H) reflecting historic germplasm accessions listed in the Genesys database that are no longer actively maintained and available upon request from their respective genebank. Click on the black markers to reveal pop-ups displaying metadata associated with each record.
+- <span style="color: black;">**G (Active accession)**</span>: germplasm records (G) reflecting actively maintained accessions listed in the Genesys database that are available upon request from their associated genebank. Click on the green markers to reveal pop-ups displaying metadata associated with each record.
+- <span style="color: black;">**G buffer**</span>: a 50 Km radial buffer area surrounding each germplasm record (G) for the conservation gap analysis, which is highlighted by green shading.
+
+Note that latitude and longitude coordinates for all occurrence records have been plotted with two decimal degrees resolution, which is consistent with the WorldClim and SoilGrids datasets utilised during ecological niche modelling. This level of precision provides a resolution of approximately 1 Km. The markers of some occurrence records that are positioned close to coastal areas may therefore plot a short distance offshore in this map.
+
+### **Ecoregions and protected areas**
+- <span style="color: black;">**Terrestrial ecoregions**</span>: ecoregions that overlap the predicted distribution models are indicated by black outlines. A pop-up containing ecoregion ID and name will appear when each ecoregion is clicked on.
+- <span style="color: black;">**Protected areas**</span>: globally recognised protected areas listed by the WDPA in March 2023 are highlighted by grey shading when selecting this information layer in the upper right corner of the map.
+
+### **Conservation gaps**
+- <span style="color: black;">***Ex situ* ecoregion gaps**</span>: ecoregions within the species' predicted distribution that lack representation by germplasm in genebanks are highlighted by pink shading when this conservation gap is selected in the upper right corner of the map.
+- <span style="color: black;">***In situ* ecoregion gaps**</span>: ecoregions which lack protected areas that overlap the species' predicted distribution are highlighted by purple shading when this conservation gap is selected in the upper right corner of the map.
+- <span style="color: black;">***Ex situ* and *in situ* geographic gaps**</span>: geographic areas that lack ex situ and in situ representation can be visualised by selecting the "G buffer" and "Protected areas" layers on the map, and observing parts of the "Binary thresholded distribution model" that do not overlap with each layer, respectively.
+
+<br>
+
+Note: a small global map insert is provided in the bottom left corner of the map. This can be minimised by selecting the minimise arrow within the insert.
+
+<br>
+
+<center> <span style="color: grey;">November 2025</span> </center>
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("./Institution_Logo_Banner.png")
+```
