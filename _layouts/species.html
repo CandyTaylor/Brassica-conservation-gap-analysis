@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="hero-banner">
+    <h1>{{ page.taxon_name }}</h1>
+</div>
+
+<div class="map-section">
+  <h2>Interactive map</h2>
+  <iframe 
+    src="{{ page.map_asset | relative_url }}" 
+    width="100%" 
+    height="800" 
+    style="border:1px solid #ddd;">
+  </iframe>
+</div>
+
+{{ content }}
+<div class="footer-note">
+  <p align="center" style="color: grey;">November 2025</p>
+</div>

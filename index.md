@@ -1,15 +1,12 @@
 ---
 layout: default
-title : Brassica Gap Analysis
+title: Brassica Gap Analysis
 ---
 
-
-# ***Brassica* crop wild relatives (CWRs): distribution ranges and conservation priorities**
-
-<br>
-
-<center> **A platform to inform and support future conservation planning and seed collection trips for wild *Brassica*** </center>     
----
+<div class="hero-banner">
+    <h1>Brassica Crop Wild Relatives</h1>
+    <p>Distribution ranges and conservation priorities to support future planning and seed collection trips.</p>
+</div>
 
 This platform shares the resources and outcomes from a comprehensive conservation gap analysis of crop wild relatives (CWR) from the *Brassica* genus, presented in:  
 
@@ -19,49 +16,48 @@ Candy M Taylor, Makenzie E Mabry, Daniel Carver, Tori Ford, Alex C McAlvay, Math
 
 ## Conservation status 
 
-[Conservation gap analysis results](./Link/to/come)
-
-[IUCN Red List assessments and threats overview](./Link/to/come)
-
-[Genebank collection statistics](./Link/to/come)
-
+<ul>
+  <li><a href="{{ '/Link/to/come' | relative_url }}" target="_blank">Conservation gap analysis results</a></li>
+  <li><a href="{{ '/Link/to/come' | relative_url }}" target="_blank">IUCN Red List assessments and threats overview</a></li>
+  <li><a href="{{ '/Link/to/come' | relative_url }}" target="_blank">Genebank collection statistics</a></li>
+</ul>
 
 ## Interactive maps 
 
-Explore distribution range models, occurrence records, and conservation gaps using interactive maps for the following 21 *Brassica* CWRs:      
+Explore distribution range models, occurrence records, and conservation gaps for the following 21 *Brassica* CWRs:
 
-[*B. aucheri*](./Maps/Brassica_aucheri.html)  
-[*B. balearica*](./Maps/Brassica_balearica.html)  
-[*B. barrelieri*](./Maps/Brassica_barrelieri.html)   
-[*B. bourgeaui*](./Maps/Brassica_bourgeaui.html)   
-[*B. cretica*](./Maps/Brassica_cretica.html)   
-[*B. deflexa*](./Maps/Brassica_deflexa.html)   
-[*B. elongata*](./Maps/Brassica_elongata.html)   
-[*B. fruticulosa*](./Maps/Brassica_fruticulosa.html)   
-[*B. gravinae*](./Maps/Brassica_gravinae.html)   
-[*B. hilarionis*](./Maps/Brassica_hilarionis.html)   
-[*B. incana*](./Maps/Brassica_incana.html)   
-[*B. insularis*](./Maps/Brassica_insularis.html)   
-[*B. macrocarpa*](./Maps/Brassica_macrocarpa.html)   
-[*B. maurorum*](./Maps/Brassica_maurorum.html)   
-[*B. montana*](./Maps/Brassica_montana.html)   
-[*B. oxyrrhina*](./Maps/Brassica_oxyrrhina.html)   
-[*B. procumbens*](./Maps/Brassica_procumbens.html)   
-[*B. repanda*](./Maps/Brassica_repanda.html)   
-[*B. rupestris*](./Maps/Brassica_rupestris.html)   
-[*B. souliei*](./Maps/Brassica_souliei.html)   
-[*B. villosa*](./Maps/Brassica_villosa.html)   
+<div class="species-grid">
+  <a href="{{ '/Maps/Brassica_aucheri' | relative_url }}" class="species-button" target="_blank">B. aucheri</a>
+  <a href="{{ '/Maps/Brassica_balearica' | relative_url }}" class="species-button" target="_blank">B. balearica</a>
+  <a href="{{ '/Maps/Brassica_barrelieri' | relative_url }}" class="species-button" target="_blank">B. barrelieri</a>
+  <a href="{{ '/Maps/Brassica_bourgeaui' | relative_url }}" class="species-button" target="_blank">B. bourgeaui</a>
+  <a href="{{ '/Maps/Brassica_cretica' | relative_url }}" class="species-button" target="_blank">B. cretica</a>
+  <a href="{{ '/Maps/Brassica_deflexa' | relative_url }}" class="species-button" target="_blank">B. deflexa</a>
+  <a href="{{ '/Maps/Brassica_elongata' | relative_url }}" class="species-button" target="_blank">B. elongata</a>
+  <a href="{{ '/Maps/Brassica_fruticulosa' | relative_url }}" class="species-button" target="_blank">B. fruticulosa</a>
+  <a href="{{ '/Maps/Brassica_gravinae' | relative_url }}" class="species-button" target="_blank">B. gravinae</a>
+  <a href="{{ '/Maps/Brassica_hilarionis' | relative_url }}" class="species-button" target="_blank">B. hilarionis</a>
+  <a href="{{ '/Maps/Brassica_incana' | relative_url }}" class="species-button" target="_blank">B. incana</a>
+  <a href="{{ '/Maps/Brassica_insularis' | relative_url }}" class="species-button" target="_blank">B. insularis</a>
+  <a href="{{ '/Maps/Brassica_macrocarpa' | relative_url }}" class="species-button" target="_blank">B. macrocarpa</a>
+  <a href="{{ '/Maps/Brassica_maurorum' | relative_url }}" class="species-button" target="_blank">B. maurorum</a>
+  <a href="{{ '/Maps/Brassica_montana' | relative_url }}" class="species-button" target="_blank">B. montana</a>
+  <a href="{{ '/Maps/Brassica_oxyrrhina' | relative_url }}" class="species-button" target="_blank">B. oxyrrhina</a>
+  <a href="{{ '/Maps/Brassica_procumbens' | relative_url }}" class="species-button" target="_blank">B. procumbens</a>
+  <a href="{{ '/Maps/Brassica_repanda' | relative_url }}" class="species-button" target="_blank">B. repanda</a>
+  <a href="{{ '/Maps/Brassica_rupestris' | relative_url }}" class="species-button" target="_blank">B. rupestris</a>
+  <a href="{{ '/Maps/Brassica_souliei' | relative_url }}" class="species-button" target="_blank">B. souliei</a>
+  <a href="{{ '/Maps/Brassica_villosa' | relative_url }}" class="species-button" target="_blank">B. villosa</a>
+</div>
 
+---
 
 ## References and further resources
 
-For information about the R codes and packages used in this work, please refer to:
-
-[GapAnalysis](https://github.com/dcarver1/GapAnalysis/tree/master): an R package for quantitative conservation status metrics.
-
-[Brassica-conservation-gap-analysis](https://github.com/CandyTaylor/Brassica-conservation-gap-analysis/tree/main): a workflow overview and R scripts used in Taylor *et al.* (2026).
+<ul>
+  <li><a href="https://github.com/dcarver1/GapAnalysis/tree/master" target="_blank">GapAnalysis</a>: an R package for quantitative conservation status metrics.</li>
+  <li><a href="https://github.com/CandyTaylor/Brassica-conservation-gap-analysis/tree/main" target="_blank">Brassica-conservation-gap-analysis</a>: a workflow overview and R scripts.</li>
+</ul>
 
 <br>
-
-
-<center><span style="color: grey;">November 2025</span></center>
+<p align="center" style="color: grey;">November 2025</p>

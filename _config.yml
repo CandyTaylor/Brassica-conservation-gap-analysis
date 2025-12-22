@@ -1,0 +1,4 @@
+exclude:
+  - _scripts
+  - README.md
+  - vendor/
