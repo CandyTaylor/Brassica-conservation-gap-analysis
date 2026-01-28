@@ -117,3 +117,30 @@ pre {
     padding: 10px;
     border-radius: 8px;
 }
+/* Review Notice Banner */
+.review-notice {
+  background-color: #fff3cd; /* Soft warning yellow */
+  color: #856404;            /* Deep brownish-gold text */
+  border: 1px solid #ffeeba; /* Slightly darker border */
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Optional: Add a little emphasis to the 'Nature Plants' text if it's in italics */
+.review-notice em {
+  color: #533f03;
+  text-decoration: underline;
+}
+.site-header-image {
+  width: 100%;           /* Scale to the width of the container */
+  max-width: 100%;       /* Ensure it never overflows */
+  height: auto;          /* Maintain aspect ratio */
+  display: block;        /* Remove bottom whitespace */
+  margin: 40px auto;     /* Center it and add vertical spacing */
+  border-radius: 15px;   /* Keep the rounded corners */
+}
