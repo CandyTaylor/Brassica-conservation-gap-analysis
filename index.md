@@ -2,6 +2,9 @@
 layout: default
 title: Brassica Gap Analysis
 ---
+<div class="review-notice">
+    DRAFT: This material is currently under review at <em>Nature Plants</em>.
+</div>
 
 <div class="hero-banner">
     <h1>Brassica Crop Wild Relatives</h1>
@@ -10,7 +13,7 @@ title: Brassica Gap Analysis
 
 This platform shares the resources and outcomes from a comprehensive conservation gap analysis of crop wild relatives (CWR) from the *Brassica* genus, presented in:  
 
-Candy M Taylor, Makenzie E Mabry, Daniel Carver, Tori Ford, Alex C McAlvay, Mathieu Rousseau-Gueutin, Graham J King, J Chris Pires, & Matthew N Nelson (2026) "Enhancing crop biodiversity: distribution ranges and conservation priorities for *Brassica* crop wild relatives".   
+Candy M Taylor, Makenzie E Mabry, Daniel Carver, Tori Ford, Alex C McAlvay, Mathieu Rousseau-Gueutin, Graham J King, J Chris Pires, & Matthew N Nelson (2026) "Integrating genebank and biodiversity database indicators to optimise ex situ and in situ conservation of crop wild relatives: a case study for *Brassica*".   
 
 ---
 
@@ -59,5 +62,7 @@ Explore distribution range models, occurrence records, and conservation gaps for
   <li><a href="https://github.com/CandyTaylor/Brassica-conservation-gap-analysis/tree/main" target="_blank">Brassica-conservation-gap-analysis</a>: a workflow overview and R scripts.</li>
 </ul>
 
+
+<img src="{{ '/assets/images/banner.png' | relative_url }}" class="site-header-image" alt="Brassica Project Banner">
 <br>
 <p align="center" style="color: grey;">November 2025</p>
