@@ -1,8 +1,12 @@
-
 ---
 ---
 
-/* Color Variables - easy to change later */
+/* Global Box Sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Color Variables */
 :root {
   --brassica-yellow: #F4D03F;
   --brassica-green: #2D5A27;
@@ -10,14 +14,25 @@
   --light-bg: #f8f9fa;
   --white: #ffffff;
 }
-/* Hero Banner - Solid Color Version */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #24292e;
+    max-width: 1012px;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: #ffffff;
+}
+
+/* Hero Banner */
 .hero-banner {
-    background: #2D5A27; /* Brassica Green */
+    background: #2D5A27;
     color: white;
     padding: 60px 20px;
     text-align: center;
     border-radius: 8px;
-    border-bottom: 6px solid #F4D03F; /* Brassica Yellow Accent */
+    border-bottom: 6px solid #F4D03F;
     margin-bottom: 40px;
 }
 
@@ -34,14 +49,15 @@
     opacity: 0.9;
 }
 
-/* Species Grid Container */
+/* Species Grid */
 .species-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
     margin-top: 20px;
 }
-/* Updated Species Buttons to use Yellow on Hover */
+
+/* Species Buttons */
 .species-button {
     display: block;
     padding: 12px 15px;
@@ -59,18 +75,9 @@
 .species-button:hover {
     background-color: var(--brassica-yellow);
     border-color: var(--brassica-yellow);
-    color: var(--dark-text) !important; /* Switch to dark text for yellow background */
+    color: var(--dark-text) !important;
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: #24292e;
-    max-width: 1012px;
-    margin: 0 auto;
-    padding: 45px;
-    background-color: #ffffff;
 }
 
 h1, h2, h3 {
@@ -93,10 +100,11 @@ pre {
     padding: 16px;
     border-radius: 6px;
     overflow: auto;
-  }
-/* taxon specific pages*/ 
+}
+
+/* Taxon Specific Pages */ 
 .taxon-container h1 {
-    color: #2D5A27; /* Matching your Brassica Green */
+    color: #2D5A27;
     border-bottom: 2px solid #F4D03F;
     padding-bottom: 10px;
 }
@@ -118,11 +126,12 @@ pre {
     padding: 10px;
     border-radius: 8px;
 }
+
 /* Review Notice Banner */
 .review-notice {
-  background-color: #fff3cd; /* Soft warning yellow */
-  color: #856404;            /* Deep brownish-gold text */
-  border: 1px solid #ffeeba; /* Slightly darker border */
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
   padding: 15px 20px;
   text-align: center;
   border-radius: 10px;
@@ -132,16 +141,17 @@ pre {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* Optional: Add a little emphasis to the 'Nature Plants' text if it's in italics */
 .review-notice em {
   color: #533f03;
   text-decoration: underline;
 }
+
+/* Site Header Image (Bottom Banner) */
 .site-header-image {
-  width: 100%;           /* Scale to the width of the container */
-  max-width: 100%;       /* Ensure it never overflows */
-  height: auto;          /* Maintain aspect ratio */
-  display: block;        /* Remove bottom whitespace */
-  margin: 40px auto;     /* Center it and add vertical spacing */
-  border-radius: 15px;   /* Keep the rounded corners */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+  border-radius: 15px;
 }
