@@ -20,9 +20,9 @@ Candy M Taylor, Makenzie E Mabry, Daniel Carver, Tori Ford, Alex C McAlvay, Math
 ## Conservation status 
 
 <ul>
-  <li><a href="https://docs.google.com/spreadsheets/d/17zp0hRitEYKScleGbdg9BBWNqmUOHoRN/edit?gid=601708855#gid=601708855" target="_blank">Conservation gap analysis results</a></li>
-  <li><a href="https://docs.google.com/spreadsheets/d/17zp0hRitEYKScleGbdg9BBWNqmUOHoRN/edit?gid=1480768973#gid=1480768973" target="_blank">IUCN Red List assessments and threats overview</a></li>
-  <li><a href="https://docs.google.com/spreadsheets/d/17zp0hRitEYKScleGbdg9BBWNqmUOHoRN/edit?gid=705903225#gid=705903225" target="_blank">Genebank collection statistics</a></li>
+  <li><a href="{{ '/Link/to/come' | relative_url }}" target="_blank">Conservation gap analysis results</a></li>
+  <li><a href="{{ '/Link/to/come' | relative_url }}" target="_blank">IUCN Red List assessments and threats overview</a></li>
+  <li><a href="{{ '/Link/to/come' | relative_url }}" target="_blank">Genebank collection statistics</a></li>
 </ul>
 
 ## Interactive maps 
