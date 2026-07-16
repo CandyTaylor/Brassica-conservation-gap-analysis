@@ -3,29 +3,24 @@ layout: default
 title: Brassica Gap Analysis
 ---
 <div class="review-notice">
-    DRAFT: This material is currently under review at <em>Nature Plants</em>.
+    DRAFT: This material is currently under review at <em>Nature Communications</em>.
 </div>
 
 <div class="hero-banner">
-    <h1>Brassica Crop Wild Relatives</h1>
+    <h1><em>Brassica</em> Crop Wild Relatives</h1>
     <p>Distribution ranges and conservation priorities to support future planning and seed collection trips.</p>
 </div>
 
-This platform shares the resources and outcomes from a comprehensive conservation gap analysis of crop wild relatives (CWR) from the *Brassica* genus, presented in:  
+This platform shares the resources from a comprehensive conservation gap analysis of crop wild relatives (CWR) from the *Brassica* genus, presented in:  
 
 Candy M Taylor, Makenzie E Mabry, Daniel Carver, Tori Ford, Alex C McAlvay, Mathieu Rousseau-Gueutin, Graham J King, J Chris Pires, & Matthew N Nelson (2026) "Integrating genebank and biodiversity database indicators to optimise ex situ and in situ conservation of crop wild relatives: a case study for *Brassica*".   
 
 ---
 
-## Conservation status 
+<img src="{{ '/assets/images/Wide_CWR_banner_1.png' | relative_url }}" class="site-header-image" alt="Diverse Brassica taxa decorative image">
+<br>
 
-<ul>
-  <li><a href="https://docs.google.com/spreadsheets/d/17zp0hRitEYKScleGbdg9BBWNqmUOHoRN/edit?gid=601708855#gid=601708855" target="_blank">Conservation gap analysis results</a></li>
-  <li><a href="https://docs.google.com/spreadsheets/d/17zp0hRitEYKScleGbdg9BBWNqmUOHoRN/edit?gid=1480768973#gid=1480768973" target="_blank">IUCN Red List assessments and threats overview</a></li>
-  <li><a href="https://docs.google.com/spreadsheets/d/17zp0hRitEYKScleGbdg9BBWNqmUOHoRN/edit?gid=705903225#gid=705903225" target="_blank">Genebank collection statistics</a></li>
-</ul>
-
-## Interactive maps 
+## Interactive maps
 
 Explore distribution range models, occurrence records, and conservation gaps for the following 21 *Brassica* CWRs:
 
@@ -55,6 +50,9 @@ Explore distribution range models, occurrence records, and conservation gaps for
 
 ---
 
+<img src="{{ '/assets/images/Wide_CWR_banner_2.png' | relative_url }}" class="site-header-image" alt="Diverse Brassica taxa decorative image">
+<br>
+
 ## References and further resources
 
 <ul>
@@ -65,4 +63,4 @@ Explore distribution range models, occurrence records, and conservation gaps for
 
 <img src="{{ '/assets/images/banner.png' | relative_url }}" class="site-header-image" alt="Brassica Project Banner">
 <br>
-<p align="center" style="color: grey;">November 2025</p>
+<p align="center" style="color: grey;">July 2026</p>

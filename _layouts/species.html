@@ -2,15 +2,15 @@
 layout: default
 ---
 <div class="hero-banner">
-    <h1>{{ page.taxon_name }}</h1>
+    <h1><em>{{ page.taxon_name }}</em></h1>
 </div>
 
 <div class="map-section">
   <h2>Interactive map</h2>
-  <iframe 
-    src="{{ page.map_asset | relative_url }}" 
-    width="100%" 
-    height="800" 
+  <iframe
+    src="{{ page.map_asset | relative_url }}"
+    width="100%"
+    height="800"
     style="border:1px solid #ddd;">
   </iframe>
 </div>
@@ -18,5 +18,5 @@ layout: default
 {{ content }}
 <img src="{{ '/assets/images/banner.png' | relative_url }}" class="site-header-image" alt="Brassica Project Banner">
 <div class="footer-note">
-  <p align="center" style="color: grey;">November 2025</p>
+  <p align="center" style="color: grey;">July 2026</p>
 </div>
