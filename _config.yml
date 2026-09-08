@@ -1,3 +1,9 @@
+title: Brassica Conservation Gap Analysis
+description: Distribution ranges and conservation priorities for Brassica crop wild relatives
+
+url: https://candytaylor.github.io
+baseurl: /Brassica-conservation-gap-analysis
+
 exclude:
   - _scripts
   - README.md

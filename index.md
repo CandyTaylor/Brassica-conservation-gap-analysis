@@ -15,7 +15,7 @@ title: Brassica Gap Analysis
 
 This platform shares the resources from a comprehensive conservation gap analysis of crop wild relatives (CWR) from the *Brassica* genus, presented in:  
 
-Candy M Taylor, Makenzie E Mabry, Daniel Carver, Tori Ford, Alex C McAlvay, Mathieu Rousseau-Gueutin, Graham J King, J Chris Pires, & Matthew N Nelson (2026) "Integrating genebank and biodiversity database indicators to optimise ex situ and in situ conservation of crop wild relatives: a case study for *Brassica*".   
+Candy M Taylor, Makenzie E Mabry, Daniel Carver, Tori Ford, Alex C McAlvay, Mathieu Rousseau-Gueutin, Graham J King, J Chris Pires, & Matthew N Nelson (2026) "Integrating genebank and biodiversity database indicators to optimise conservation of *Brassica* crop wild relatives".
 
 ---
 

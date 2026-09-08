@@ -72,7 +72,7 @@ cgamap <- function(taxon, sdm, sdm_thresh, occurrenceData, protectedAreas, ecore
   missingEcosInsitu <- selectedEcos_thresh[!selectedEcos_thresh$id_column %in% protectedEcos$id_column, ]
   
   # create buffer around occurrence points
-  occ <- occData |>
+  occ <- occurrenceData |>
     dplyr::filter(Taxon == taxon & Type == "G_Active") |>
     terra::vect(geom=c("Longitude", "Latitude")) 
   terra::crs(occ) <- "epsg:4326"
@@ -165,38 +165,38 @@ cgamap <- function(taxon, sdm, sdm_thresh, occurrenceData, protectedAreas, ecore
                          fillOpacity = 0.5, 
                          group = "Ex situ ecoregion gaps"
                          ) |>
-    addAwesomeMarkers(lat = occData[occData$Type=="H_Obs",13], 
-                      lng = occData[occData$Type=="H_Obs",14],
+    addAwesomeMarkers(lat = occurrenceData[occurrenceData$Type=="H_Obs",13], 
+                      lng = occurrenceData[occurrenceData$Type=="H_Obs",14],
                       icon = H_observations,
-                      popup = paste("Database :", filter(occData, Type=="H_Obs")$Database, "<br>",
-                                    "Basis of record: ", filter(occData, Type=="H_Obs")$BasisOfRecord, "<br>",
-                                    "Latitude :", filter(occData, Type=="H_Obs")$Latitude, "<br>",
-                                    "Longitude :", filter(occData, Type=="H_Obs")$Longitude, "<br>"
+                      popup = paste("Database :", filter(occurrenceData, Type=="H_Obs")$Database, "<br>",
+                                    "Basis of record: ", filter(occurrenceData, Type=="H_Obs")$BasisOfRecord, "<br>",
+                                    "Latitude :", filter(occurrenceData, Type=="H_Obs")$Latitude, "<br>",
+                                    "Longitude :", filter(occurrenceData, Type=="H_Obs")$Longitude, "<br>"
                                     ),
                       group = "H (Observation)"
                       ) |>
-    addAwesomeMarkers(lat = occData[occData$Type=="H_Historic",13], 
-                      lng = occData[occData$Type=="H_Historic",14],
+    addAwesomeMarkers(lat = occurrenceData[occurrenceData$Type=="H_Historic",13], 
+                      lng = occurrenceData[occurrenceData$Type=="H_Historic",14],
                       icon = H_historicAccs,
-                      popup = paste("Genesys ID: ", filter(occData, Type=="H_Historic")$Genesys.ID, "<br>",
-                                    "Institute WEIWS instcode: ", filter(occData, Type=="H_Historic")$Institute.WEIWS.instcode, "<br>",
-                                    "Institute ID: ", filter(occData, Type=="H_Historic")$Institute.ID, "<br>",
-                                    "Year of collection: ", filter(occData, Type=="H_Historic")$Year, "<br>",
-                                    "Status: ", filter(occData, Type=="H_Historic")$Status, "<br>",
-                                    "Latitude: ", filter(occData, Type=="H_Historic")$Latitude, "<br>",
-                                    "Longitude: ", filter(occData, Type=="H_Historic")$Longitude, "<br>"),
+                      popup = paste("Genesys ID: ", filter(occurrenceData, Type=="H_Historic")$Genesys.ID, "<br>",
+                                    "Institute WEIWS instcode: ", filter(occurrenceData, Type=="H_Historic")$Institute.WEIWS.instcode, "<br>",
+                                    "Institute ID: ", filter(occurrenceData, Type=="H_Historic")$Institute.ID, "<br>",
+                                    "Year of collection: ", filter(occurrenceData, Type=="H_Historic")$Year, "<br>",
+                                    "Status: ", filter(occurrenceData, Type=="H_Historic")$Status, "<br>",
+                                    "Latitude: ", filter(occurrenceData, Type=="H_Historic")$Latitude, "<br>",
+                                    "Longitude: ", filter(occurrenceData, Type=="H_Historic")$Longitude, "<br>"),
                       group = "H (Historic accession)"
                       ) |>
-    addAwesomeMarkers(lat = occData[occData$Type=="G_Active",13], 
-                      lng = occData[occData$Type=="G_Active",14],
+    addAwesomeMarkers(lat = occurrenceData[occurrenceData$Type=="G_Active",13], 
+                      lng = occurrenceData[occurrenceData$Type=="G_Active",14],
                       icon = G_activeAccs,
-                      popup = paste("Genesys ID: ", filter(occData, Type=="G_Active")$Genesys.ID, "<br>",
-                                    "Institute WEIWS instcode: ", filter(occData, Type=="G_Active")$Institute.WEIWS.instcode, "<br>",
-                                    "Institute ID: ", filter(occData, Type=="G_Active")$Institute.ID, "<br>",
-                                    "Year of collection: ", filter(occData, Type=="G_Active")$Year, "<br>", 
-                                    "Status: ", filter(occData, Type=="G_Active")$Status, "<br>",
-                                    "Latitude: ", filter(occData, Type=="G_Active")$Latitude, "<br>",
-                                    "Longitude: ", filter(occData, Type=="G_Active")$Longitude, "<br>"),
+                      popup = paste("Genesys ID: ", filter(occurrenceData, Type=="G_Active")$Genesys.ID, "<br>",
+                                    "Institute WEIWS instcode: ", filter(occurrenceData, Type=="G_Active")$Institute.WEIWS.instcode, "<br>",
+                                    "Institute ID: ", filter(occurrenceData, Type=="G_Active")$Institute.ID, "<br>",
+                                    "Year of collection: ", filter(occurrenceData, Type=="G_Active")$Year, "<br>", 
+                                    "Status: ", filter(occurrenceData, Type=="G_Active")$Status, "<br>",
+                                    "Latitude: ", filter(occurrenceData, Type=="G_Active")$Latitude, "<br>",
+                                    "Longitude: ", filter(occurrenceData, Type=="G_Active")$Longitude, "<br>"),
                       group = "G (Active accession)"
                       ) |>
     leaflet::addPolygons(data = gBuffer, 
